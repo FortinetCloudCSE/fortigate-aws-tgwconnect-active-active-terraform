@@ -1,0 +1,17 @@
+variable "region" {}
+variable "availability_zone1" {}
+variable "availability_zone2" {}
+variable "vpc_cidr" {}
+variable "public_subnet_cidr1" {}
+variable "public_subnet_cidr2" {}
+variable "private_subnet_cidr1" {}
+variable "private_subnet_cidr2" {}
+variable "attachment_subnet_cidr1" {}
+variable "attachment_subnet_cidr2" {}
+variable "tag_name_prefix" {}
+variable "tag_name_unique" {}
+variable "tgw_creation" {}
+variable "tgw_id" {}
+variable "tgw_connect_cidr" {}
+variable "tgw_spoke_route_table_id" {}
+variable "tgw_security_route_table_id" {}
