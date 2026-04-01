@@ -51,10 +51,10 @@ module "fgt-tgw" {
   availability_zone2 = var.availability_zone2
   vpc_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].vpc_id : var.existing_vpc_id
   vpc_cidr = var.inspection_vpc_cidr
-  public_subnet1_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].public_subnet1_id : var.existing_public_subnet1
-  private_subnet1_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].private_subnet1_id : var.existing_private_subnet1
-  public_subnet2_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].public_subnet2_id : var.existing_public_subnet2
-  private_subnet2_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].private_subnet2_id : var.existing_private_subnet2
+  public_subnet1_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].public_subnet1_id : var.existing_public_subnet1_id
+  private_subnet1_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].private_subnet1_id : var.existing_private_subnet1_id
+  public_subnet2_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].public_subnet2_id : var.existing_public_subnet2_id
+  private_subnet2_id = local.create_inspect_vpc == 1 ? module.inspection-vpc[0].private_subnet2_id : var.existing_private_subnet2_id
 
   cidr_for_access = var.cidr_for_access
   keypair = var.keypair

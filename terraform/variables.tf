@@ -91,22 +91,22 @@ variable "existing_vpc_id" {
   type = string
   default = ""
 }
-variable "existing_public_subnet1" {
+variable "existing_public_subnet1_id" {
   description = "Provide the existing vpc public subnet1 id"
   type = string
   default = ""
 }
-variable "existing_public_subnet2" {
+variable "existing_public_subnet2_id" {
   description = "Provide the existing vpc public subnet2 id"
   type = string
   default = ""
 }
-variable "existing_private_subnet1" {
+variable "existing_private_subnet1_id" {
   description = "Provide the existing vpc private subnet1 id"
   type = string
   default = ""
 }
-variable "existing_private_subnet2" {
+variable "existing_private_subnet2_id" {
   description = "Provide the existing vpc private subnet2 id"
   type = string
   default = ""
