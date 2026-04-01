@@ -50,17 +50,17 @@ If using an existing tgw and inspect vpc:
   then fill out the variables below:
   (you may also need to set the tgw_connect_peer1/2_inside_cidr to unique values)
 */
-#existing_vpc_id = "vpc-0a911983e4d5b3983"
-#existing_public_subnet1 = "subnet-0d76257019bffdddf"
-#existing_private_subnet1 = "subnet-08b01af3a7d4e20f7"
-#existing_public_subnet2 = "subnet-0db20a9d0794e7157"
-#existing_private_subnet2 = "subnet-0677cf2d5c2517996"
-#existing_tgw_id = "tgw-009bc26c2ef8bb259"
-#existing_tgw_security_route_table_id = "tgw-rtb-0d4bb6abd2e5a7ea6"
-#existing_tgw_spoke_route_table_id = "tgw-rtb-06e12af9bd6a25b58"
-#existing_tgw_connect_attachment_id = "tgw-attach-085d06c3fc85123c1"
-#tgw_connect_peer1_inside_cidr = "169.254.8.0/29"
-#tgw_connect_peer2_inside_cidr = "169.254.9.0/29"
+#existing_vpc_id = ""
+#existing_public_subnet1_id = ""
+#existing_private_subnet1_id = ""
+#existing_public_subnet2_id = ""
+#existing_private_subnet2_id = ""
+#existing_tgw_id = ""
+#existing_tgw_security_route_table_id = ""
+#existing_tgw_spoke_route_table_id = ""
+#existing_tgw_connect_attachment_id = ""
+#tgw_connect_peer1_inside_cidr = ""
+#tgw_connect_peer2_inside_cidr = ""
 
 
 # Specify the name of the keypair that the FGTs will use.
@@ -73,7 +73,7 @@ cidr_for_access = ""
 tag_name_prefix = "poc"
 
 # Specify the instance type, reference variables.tf for a list of values.
-instance_type = c6i.xlarge
+instance_type = "c6i.xlarge"
 
 # Specify the FortiOS version to use 7.2, 7.4, or 7.6
 fortios_version = "7.6"

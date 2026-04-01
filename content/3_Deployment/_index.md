@@ -29,7 +29,7 @@ terraform apply --auto-approve
 
 4.  When the deployment is complete, you will see login information for the FortiGates like so.
 ```
-Apply complete! Resources: 60 added, 0 changed, 0 destroyed.
+Apply complete! Resources: 61 added, 0 changed, 0 destroyed.
 
 Outputs:
 
