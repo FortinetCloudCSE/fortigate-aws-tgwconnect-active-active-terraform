@@ -11,7 +11,7 @@ FGTLOGIN
 }
 
 output "tgw_info" {
-  value = var.create_tgw == "yes" ? (
+  value = var.create_tgw ? (
     <<-tgwNEW
 -=-=-=-=-=-=-=-=-=-=-
 tgw id: ${module.transit-gw[0].tgw_id}
