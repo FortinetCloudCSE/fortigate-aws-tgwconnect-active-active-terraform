@@ -45,9 +45,9 @@ fgt2 login url: https://184.33.209.229
 EOT
 tgw_info = <<EOT
 -=-=-=-=-=-=-=-=-=-=-
-tgw_id = var.existing_tgw_id
-tgw_spoke_route_table_id = var.existing_tgw_spoke_route_table_id
-tgw_security_route_table_id = var.existing_tgw_security_route_table_id
+tgw id: tgw-0e46951864851d373
+tgw spoke route table id: tgw-rtb-0c01a6e0c3da69aa6
+tgw security route table id: tgw-rtb-03c950302097e143f
 -=-=-=-=-=-=-=-=-=-=-
 
 EOT
