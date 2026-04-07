@@ -19,7 +19,7 @@ tgw spoke route table id: ${module.transit-gw[0].tgw_spoke_route_table_id}
 tgw security route table id: ${module.transit-gw[0].tgw_security_route_table_id}
 -=-=-=-=-=-=-=-=-=-=-
 tgwNEW
-  ) : (
+    ) : (
     <<-tgwEXISTING
 -=-=-=-=-=-=-=-=-=-=-
 tgw_id = var.existing_tgw_id
