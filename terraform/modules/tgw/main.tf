@@ -1,11 +1,11 @@
 resource "aws_ec2_transit_gateway" "transit_gateway" {
-  auto_accept_shared_attachments = "disable"
+  auto_accept_shared_attachments  = "disable"
   default_route_table_association = "disable"
   default_route_table_propagation = "disable"
-  vpn_ecmp_support = "enable"
-  dns_support = "enable"
-  amazon_side_asn = var.tgw_bgp_asn
-  transit_gateway_cidr_blocks = [var.tgw_connect_cidr]
+  vpn_ecmp_support                = "enable"
+  dns_support                     = "enable"
+  amazon_side_asn                 = var.tgw_bgp_asn
+  transit_gateway_cidr_blocks     = [var.tgw_connect_cidr]
   tags = {
     Name = "${var.tag_name_prefix}-tgw"
   }
